@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+table,th,td{
+    border: solid 2px #000000;
+    border-collapse: collapse;
+    margin: 20px;
+    font-family: "HGP創英角ｺﾞｼｯｸUB"
+}
+th{
+    background-color: blanchedalmond;
+    padding: 5px;
+}
