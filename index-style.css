@@ -1,0 +1,27 @@
+img{
+    width: 400px;
+    height: 300px;
+    opacity: 1;
+}
+.list li{
+    list-style: "↓";
+    font-size: 150%;
+    margin-left: 20px;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+div{
+    margin: 50px;
+}
+p{
+    margin-left: 875px;
+}
+h1{
+    text-align: center;
+}
+.hover a:hover img{
+    opacity: 0.5;
+}

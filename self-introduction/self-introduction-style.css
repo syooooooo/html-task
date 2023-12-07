@@ -1,0 +1,17 @@
+/*記述済みの部分は変更しないでください！*/
+
+@charset "utf-8";
+
+.mark-list {
+    list-style: "★";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: beige;
+}
