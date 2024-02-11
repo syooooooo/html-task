@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body class="colorchangeanime2_bg">
+   <div class="background">
+   <header class="header">
+      <div id="navArea">
+
+         <nav>
+           <div class="inner">
+             <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="story/story.html">Story</a></li>
+               <li><a href="about/about.html">About</a></li>
+             </ul>
+           </div>
+         </nav>
+       
+         <div class="toggle_btn">
+           <span></span>
+           <span></span>
+           <span></span>
+         </div>
+       
+         <div id="mask"></div>
+       
+       </div>
+   </header>
+   <h1 class="fuchidori a">富、名声、力、この世の全てを手に入れた男〝海賊王ゴールドロジャー〟<br>
+      彼の死に際に放った一言は人々を海へ駆り立てた。</h1>
+   <h1 class="fuchidori">「俺の財宝か？欲しけりゃくれてやる・・・。探せ！この世の全てをそこに置いてきた！」</h1>
+   <h1 class="fuchidori z">男達はグランドラインを目指し、夢を追い続ける・・・！<br>
+      世はまさに大海賊時代！！</h1>
+
+      <ul class="s">
+         <li>
+            <div class="f">
+               <a href="story/story.html"><img src="img/story_list.jpg" alt=""></a>
+            </div>
+            <a href="story/story.html">これまでのストーリー</a>
+         </li>
+         <li>
+            <div class="f">
+               <a href="about/about.html"><img src="img/about_list.jpg" alt=""></a>
+            </div>
+            <a href="about/about.html">作品情報</a>
+         </li>
+      </ul>
+   </div>
+      
+   <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
+
+   <script>
+(function($) {
+      var $nav   = $('#navArea');
+      var $btn   = $('.toggle_btn');
+      var $mask  = $('#mask');
+      var open   = 'open'; // class
+      // menu open close
+      $btn.on( 'click', function() {
+        if ( ! $nav.hasClass( open ) ) {
+          $nav.addClass( open );
+        } else {
+          $nav.removeClass( open );
+        }
+      });
+      // mask close
+      $mask.on('click', function() {
+        $nav.removeClass( open );
+      });
+    } )(jQuery);
+   </script>
+
+</body>
+</html>

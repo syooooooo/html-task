@@ -1,0 +1,7 @@
+ページ内遷移
+・Episode1～Episode12のChapterサイドバー
+・右下のボタン
+
+疑似クラス
+・imgにhover
+・ハンバーガーメニューにnth-child
